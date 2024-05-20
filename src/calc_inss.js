@@ -1,4 +1,4 @@
-function calculateInss(grossSalary) {
+module.exports.calculateInss = (grossSalary) => {
   const INSS_CEILING = 908.85;
   let inss = 0;
 
@@ -15,6 +15,4 @@ function calculateInss(grossSalary) {
   if (inss >= INSS_CEILING) inss = INSS_CEILING;
 
   return inss;
-}
-
-module.exports = calculateInss;
+};
